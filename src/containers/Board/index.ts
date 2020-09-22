@@ -10,7 +10,7 @@ const mapStateToProps = (state: any) => {
 
 const mapDispatchToProps = (dispatch: any) => {
   return {
-    addCard: (destinationCategory) => {
+    addCard: (destinationCategory: string) => {
       dispatch(addCard(destinationCategory));
     }
   };
