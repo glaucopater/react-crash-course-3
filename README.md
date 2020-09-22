@@ -1,2 +1,2 @@
-# react-crash-course-3ash-course-3
+# react-crash-course
 Created with CodeSandbox

@@ -1,0 +1,20 @@
+.Deck {
+  border: 1px solid red;
+  width: 200px;
+  background: white;
+  border-radius: 8px;
+  margin: 8px;
+  padding: 8px;
+}
+
+.ToDo {
+  background: #cd5c5a;
+}
+
+.InProgress {
+  background: #eacb78;
+}
+
+.Done {
+  background: #99c1a9;
+}

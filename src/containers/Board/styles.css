@@ -1,0 +1,11 @@
+.Board {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+}
+
+.DeckContainer {
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+}

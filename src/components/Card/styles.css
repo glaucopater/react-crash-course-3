@@ -1,0 +1,21 @@
+.Card {
+  border: 1px solid black;
+  width: 100px;
+  margin: 8px auto;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 3px 3px 3px 3px grey;
+  cursor: pointer;
+  transition: all 0.125s ease-in-out;
+  background: white;
+}
+
+.Card:hover {
+  box-shadow: 2px 2px 2px 2px grey;
+}
+
+.Card > p {
+  border: 1px solid white;
+  border-radius: 8px;
+  background: gold;
+}
