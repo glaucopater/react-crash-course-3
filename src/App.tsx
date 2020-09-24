@@ -13,7 +13,6 @@ const store = createStore(rootReducer, composeWithDevTools(
   applyMiddleware(thunk, logger)
 ));
 
-
 export default function App() {
   return (
     <Provider store={store}>

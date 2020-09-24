@@ -1,9 +1,9 @@
 import { combineReducers } from "redux";
 import { ADD_CARD } from "./actionTypes";
-import { initialData } from "./data";
+import { initialStore } from "./store";
 
 const initialState = {
-  boardStore: initialData
+  boardStore: initialStore
 };
 
 const boardStore = (state = initialState.boardStore, action: any) => {

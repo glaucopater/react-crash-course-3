@@ -2,7 +2,10 @@ import * as actionTypes from "./actionTypes";
 
 export const createNewCard = (boardStore: any, destinationCategory: string) => {
   boardStore[destinationCategory] = [
-    "newCard",
+    {
+      text: "newCard",
+      id: 777
+    },
     ...boardStore[destinationCategory]
   ];
 
@@ -12,9 +15,28 @@ export const createNewCard = (boardStore: any, destinationCategory: string) => {
   };
 };
 
+
+
 export const addCard = (destinationCategory: string) => {
   return (dispatch: any, getState: any) => {
     const boardStore = getState().boardStore;
     dispatch(createNewCard(boardStore, destinationCategory));
   };
 };
+
+
+export const updateSingleCard = (boardStore: any, cardId: number) => {
+  return {
+    type: actionTypes.UPDATE_BOARD,
+    boardStore
+  };
+};
+
+export const updateCard = (cardId: number) => {
+  return (dispatch: any, getState: any) => {
+    const boardStore = getState().boardStore;
+    dispatch(updateSingleCard(boardStore, cardId));
+  };
+};
+
+

@@ -1,17 +1,17 @@
-export const initialData = {
+export const initialStore = {
   ToDo: [
     {
       text: "Review request for proposal",
       id: 101
     },
     {
-      text: "Develop BIM Model of wind shear impact",
+      text: "Develop  Model of wind shear impact",
       id: 102
     }
   ],
   InProgress: [
     {
-      text: "Prepare for client meeting with Addisons",
+      text: "Prepare for client meeting with Boss",
       id: 201
     },
     {
@@ -27,10 +27,26 @@ export const initialData = {
       id: 204
     }
   ],
+  Test: [
+    {
+      id: 301,
+      text: "Check some tests"
+    }
+  ],
   Done: [
+    {
+      id: 401,
+      text: "Write meeting minutes from client meeting"
+    }
+  ]
+};
+
+
+export const mockData = {
+  Todo: [
     {
       id: 301,
       text: "Write meeting minutes from client meeting"
     }
   ]
-};
+}

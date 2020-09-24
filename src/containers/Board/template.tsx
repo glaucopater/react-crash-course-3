@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Card } from "../../components/Card";
+import Card from "../../components/Card";
 import { Deck } from "../../components/Deck/template";
 import "./styles.css";
 
@@ -8,12 +8,16 @@ export const Board = ({
   addCard
 }: {
   boardStore: any;
-  addCard: (c: string) => void;
+  addCard: (category: string) => void;
 }) => {
   const [counter, setCounter] = React.useState(0);
   const handleCounterClick = () => {
     setCounter(counter + 1);
   };
+
+
+  console.log("boardStore", boardStore);
+
 
   return (
     <div className="Board">
@@ -22,11 +26,12 @@ export const Board = ({
         {Object.keys(boardStore).map((category, index) => {
           const cards = boardStore[
             category
-          ].map((item: { id: number }, index: any) => (
+          ].map((item: { id: number, text: string }, index: any) => (
             <Card
               key={index.toString()}
               name={"Card_" + index}
               value={item.id}
+              text={item.text}
               initialValue={item.id}
               counterClick={handleCounterClick}
             />
